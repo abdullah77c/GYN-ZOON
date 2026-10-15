@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    background: #000000;
+    font-family: 'Roboto', sans-serif;
+    color: antiquewhite;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+}
+
+#logo {
+    width: 90px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.hhy, .hhy1 {
+    text-decoration: none;
+    color: rgb(253, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.hhy:hover, .hhy1:hover {
+    color: #ccccb0;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+h6 {
+    color: antiquewhite;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin: 0 0 15px 0;
+}
+
+#wwc {
+    color: antiquewhite;
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 1;
+    margin: 0;
+}
+
+#ffg {
+    color: antiquewhite;
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 0 0 15px 0;
+}
+
+h5 {
+    color: antiquewhite;
+    font-size: 16px;
+    margin: 0 0 30px 0;
+    color: #b0b0b0;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 15px;
+}
+
+.shop-btn {
+    background-color: #7b7979;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.shop-btn:hover {
+    background-color: #ffffff;
+}
+
+.deals-btn {
+    background-color: transparent;
+    color: #7b7979;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 12px 24px;
+    border: 2px solid #7b7979;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.deals-btn:hover {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.hero-image-box {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image-box img {
+    width: 100%;
+    max-width: 450px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Categories Section */
+.categories-section {
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+}
+
+#ccf {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.cat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.cat-card {
+    background-color: #656554b5;
+    border-radius: 20px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.2s;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.cat-card:hover {
+    transform: translateY(-5px);
+}
+
+.cat-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+#we1, #we2, #we3 {
+    text-decoration: none;
+    color: rgb(253, 255, 255);
+    font-family: "Comfortaa", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Join Section */
+.join-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#e4 {
+    background-color: #656554b5;
+    border-radius: 20px;
+    padding: 25px 35px;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tty {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0 0 5px 0;
+}
+
+.tty1 {
+    color: #ccccb0;
+    font-size: 14px;
+    margin: 0;
+}
+
+.shop-btn2 {
+    background-color: #7b7979;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.shop-btn2:hover {
+    background-color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .cat-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero-section {
+        flex-direction: column;
+    }
+}

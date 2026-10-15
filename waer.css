@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  background: #000000;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+}
+
+#logo {
+  display: block;
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* استخدام Grid لترتيب المنتجات بشكل منظم ومثالي دون الحاجة لـ transform و relative العشوائية */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 40px;
+  justify-content: center;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 300px;
+  background: #656554b5;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-box {
+  height: 370px;
+  padding: 20px 25px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 24px;
+  color: antiquewhite;
+  margin: 0 0 15px 0;
+  text-align: center;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-box img {
+  max-width: 100%;
+  max-height: 230px;
+  object-fit: contain;
+}
+
+.btn-box {
+  background: #03210542;
+  height: 74px;
+  border-radius: 0px 0px 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-btn {
+  background-color: transparent;
+  color: #ccccb0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 9px 16px;
+  border: 3px solid #ffffff8f;
+  border-radius: 14px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.view-btn:hover {
+  background-color: #ffffff15;
+  color: #ffffff;
+}
